@@ -52,4 +52,9 @@ public class TaskController {
         taskService.toggleTask(taskId);
         return "redirect:/tasks?userId="+userId; // Redirect to the user's tasks page
     }
+
+    @GetMapping("/getStatus")
+    public String getSttus(){
+        return "Hello";
+    }
 }
